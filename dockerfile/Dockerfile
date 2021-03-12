@@ -1,7 +1,8 @@
-ARG PYTHON_VERSION="3.8.8"
+ARG PYTHON_VERSION=3.8.8
 
 FROM arm64v8/python:${PYTHON_VERSION}
-ARG TORCH_VERSION="1.8.0"
+ARG TORCH_VERSION=1.8.0
+
 RUN apt-get update && apt-get install -y --no-install-recommends \
     git \
     curl && \
