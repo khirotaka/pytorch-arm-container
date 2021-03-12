@@ -32,6 +32,6 @@ jobs:
         with:
           context: dockerfile/Dockerfile
           push: true
-          tags: khirotaka0122/torch:${{ env.github.event.release.tag_name }}-aarch64-py${{ matrix.py }}
+          tags: khirotaka0122/torch:${{ github.event.release.tag_name }}-aarch64-py${{ matrix.py }}
           build-args: PYTHON_VERSION=${{ matrix.py }} TORCH_VERSION=${{ env.github.event.release.tag_name }}
 
