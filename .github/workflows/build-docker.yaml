@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        py: [3.8.8, 3.9.2]
+        py: [3.8.9, 3.9.7, "3.10.0"]
 
     steps:
       - name: Checkout
